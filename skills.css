@@ -1,0 +1,127 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	font-family: 'Lato', arial, san-serif;
+	line-height: 20px;
+	background: #DDDDDD;
+}
+
+#content{
+	background: white;
+	width: 950px;
+	height: 600px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 5px #777;
+}
+
+#header{
+	line-height: 10px;
+	background: #660066;
+	color: white;
+	height: 70px;
+	padding-top: 1px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	opacity: .5;
+	font-family: 'Raleway', arial, san-serif;
+	border-radius: 10px 10px 0px 0px;
+	width: 940px;
+}
+#head_text{
+	width: 400px;
+	position: relative;
+	float: left;
+}
+
+#head_nav{
+	float: right;
+	width: 400px;
+	text-align: right;
+	padding-right: 10px;
+	position: relative;
+	margin-top: 40px;
+}
+	#head_nav ul li {
+		display: inline;
+		text-decoration: none;
+		padding-left: 30px;
+	}
+	
+	#head_nav ul li a {
+		color: white;
+		text-decoration: none;
+	}
+	
+	#head_nav ul li a:hover {
+		color: red;
+	}
+
+.contain {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	width: 950px;
+}
+
+.Person {
+	margin-top: 15px;
+	margin-left: 15px;
+	width:774px;
+	float: left;
+	position: relative;
+}
+
+.info {
+	width: 800px;
+	/*line-height: 10px;*/
+}
+
+.skills_cont {
+ 	width: 800px;
+ 	position:relative;
+}
+
+.skill {
+	width: 250px;
+	float: left;
+	line-height: 5px;
+}
+	.skill li{
+		margin:0;
+		padding:0;
+		text-align: left;
+	}
+	.skill ul{
+		line-height: 20px;
+		margin:0;
+		padding:0;
+		list-style-type: none;
+	}
+
+#nav {
+ 	float: left;
+ 	position:relative;
+ 	width: 150px;
+ 	margin-top: 15px;
+ 	padding-left: 10px;
+	border-right: gray 1px solid;
+	overflow: scroll;
+	height: 500px;
+}
+
+	#nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#nav li{
+		margin:0;
+		padding:0;
+		text-align: left;
+	}
+	
+h2 {
+	margin: 0px;
+	padding: 0px;
+}
