@@ -19,6 +19,13 @@ require_once('MongoConnect.php');
 		public function get_skills($name){
 			$skill_list =  "";
 			$skill_array = $this->csh_collection->find(array('name' => $name));
+			
+			$person_data = array();
+			foreach($skill_array as $data)
+			{
+				$person_data[] = $data;
+			}
+
 			foreach($skill_array as $skill){
 
 				foreach($skill['skills'] as $key => $value)

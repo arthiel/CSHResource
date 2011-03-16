@@ -6,9 +6,13 @@
 <p>Calculating.</p>
 <?php
 	
+	print_r($_POST);
 	require_once("update.php");
 	
+	$updater = new Update_DB();
+	
 	if( array_key_exists('submit', $_POST)){
+		echo "Submit.";
 		$newrecord = array("name"=>$_POST['name'], "year"=>$_POST['year'], 
 					"major"=>$_POST['major'], 
 					"skills"=>(object)array($_POST['cat1'] 
@@ -19,7 +23,8 @@
 							$_POST['cat3'] => array($_POST['c3s1'], $_POST['c3s2'],
 								$_POST['c3s3'], $_POST['c3s4'], $_POST['c3s5']))
 					);
-		addRecord($newrecord);			
+		echo "Record retrieved";
+		$updater->addRecord($newrecord);			
 		
 		echo "Record Added";
 	}
