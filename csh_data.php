@@ -10,7 +10,7 @@ require_once('MongoConnect.php');
 			$name_string = "";
 			
 			foreach($this->csh_collection->find() as $obj){
-				$name_string .= "<li id=". $obj["name"] . ">" . $obj["name"] . "</li>";	
+				$name_string .= "<li id=". $obj["name"]."><a href='skills.php?person=".$obj["name"]."'>" . $obj["name"] . "</a></li>";	
 			}
 			
 			return $name_string;
@@ -43,5 +43,18 @@ require_once('MongoConnect.php');
 			return $skill_list;
 		}
 		
+		public function get_year($name){
+			$year = $this->csh_collection->find(array('name' => $name));
+			foreach($year as $data){
+				return $data['year'];
+			}
+		}
+		
+		public function get_major($name){	
+			$data = $this->csh_collection->find(array('name' => $name));
+			foreach($data as $major){
+				return $major['major'];
+			}
+		}
 	}
 ?>

@@ -5,18 +5,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="skills.css" type="text/css"></link>
+
+	<script ="text/javascript">
 	
-	<script = "text/javascript">
-		$(document).ready(function(){
-			var sections = $(#nav li);
-			var content = $(.Person);
-		
-		
-			sections.onclick(function(){
-				
-			});
-		}
+	
+	
+	
 	</script>
+
 </head>
 <body>
 <div id="content">
@@ -37,25 +33,13 @@
 <div class="contain">
 	<div id="nav">	
 		<ul>
-			<?=$foo?>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>
-			<li>Person</li>		
+			<?=$foo?>	
 		</ul>
 	</div>
 	<div class="Person">
 		<div class="info">
-			<h2> Name Here </h2>
-			<h3> Year Three, My Major </h3>
+			<h2> <?=$name?> </h2>
+			<h3> Year <?=$year?>, <?=$major?> </h3>
 		</div>
 		<div class="skills_cont">		
 			<?=$skills?>
