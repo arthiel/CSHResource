@@ -5,14 +5,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="skills.css" type="text/css"></link>
-
-	<script ="text/javascript">
-	
-	
-	
-	
-	</script>
-
 </head>
 <body>
 <div id="content">
@@ -24,9 +16,9 @@
 	</div>
 	<div id="head_nav">
 		<ul>
-			<li> <a href="#">Home</a> </li>
-			<li> <a href="#">Search</a></li>
-			<li> <a href="#">View </a></li>
+			<li> <a href="skills.php">Home</a> </li>
+			<li> <a href="skills.php">View </a></li>
+			<li> <a href="update.html">Add </a></li>
 		</ul>
 	</div>
 </div>

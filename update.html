@@ -16,9 +16,9 @@
 	</div>
 	<div id="head_nav">
 		<ul>
-			<li> <a href="#">Home</a> </li>
-			<li> <a href="#">Search</a></li>
-			<li> <a href="#">View </a></li>
+			<li> <a href="skills.php">Home</a> </li>
+			<li> <a href="skills.php">View </a></li>
+			<li> <a href="update.html">Add </a></li>
 		</ul>
 	</div>
 </div>
@@ -26,12 +26,12 @@
 <form action="update_db.php" method="POST">
 	<div class="Person">
 		<div class="info">
-			<h2> Name : <input type="text" size="30" name="name" /></h2>
-			<h3> Year <input type="text" size="2" name="year" />, Major <input type="text" size="30" name="major" /></h3>
+			<h2> Name : <input type="text" size="30" name="name" required /></h2>
+			<h3> Year <input type="text" size="2" name="year" required/>, Major <input type="text" size="30" name="major" required="true"/></h3>
 		</div>
 
 			<div class="skill">
-				<h3>Category: <input type="text" size="30" name="cat1" /></h3>
+				<h3>Category: <input type="text" size="30" name="cat1" required /></h3>
 				<ul>
 					<li><input type="text" size="30" name="c1s1" /></li>
 					<li><input type="text" size="30" name="c1s2" /></li>
@@ -41,7 +41,7 @@
 				</ul>
 			</div>
 			<div class="skill">
-				<h3>Category: <input type="text" size="30" name="cat2" /></h3>
+				<h3>Category: <input type="text" size="30" name="cat2" required /></h3>
 				<ul>
 					<li><input type="text" size="30" name="c2s1" /></li>
 					<li><input type="text" size="30" name="c2s2" /></li>
@@ -51,7 +51,7 @@
 				</ul>
 			</div>
 			<div class="skill">
-				<h3>Category: <input type="text" size="30" name="cat3" /></h3>
+				<h3>Category: <input type="text" size="30" name="cat3" required/></h3>
 				<ul>
 					<li><input type="text" size="30" name="c3s1" /></li>
 					<li><input type="text" size="30" name="c3s2" /></li>

@@ -8,8 +8,6 @@
 		}	
 		
 		public function addRecord( $newrec ){
-					echo "Called it.";
-
 			$this->csh_collection->insert($newrec);	
 		}
 	}

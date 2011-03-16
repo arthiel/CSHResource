@@ -8,7 +8,12 @@ $foo = $csh->get_names();
 //$name;
 
 
-$name = $_GET['person'];
+if(isset($_GET['person'])){
+	$name = $_GET['person'];
+}
+else{
+	$name = "Sean McGary";
+}
 $year = $csh->get_year($name); 
 $skills = $csh->get_skills($name);
 $major = $csh->get_major($name);
